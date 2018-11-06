@@ -1,0 +1,90 @@
+<style>
+    .tab-detail .nav-tabs li.active a:focus,
+    .tab-detail .nav-tabs li.active a:hover,
+    .tab-detail .nav-tabs li.active a {
+        color: #f67521;
+        border: 0px;
+        border-bottom: 3px #f67521 solid;
+    }
+    
+    .tab-detail .nav-tabs li a:hover {
+        color: #f67521;
+        background-color: #fff;
+        border: 0px;
+        border-bottom: 3px #f67521 solid;
+    }
+    
+    .tab-detail .nav-tabs li {
+        margin-left: 40px;
+    }
+    
+    .tab-detail .nav>li>a {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 15px;
+        font-size: 14px;
+        margin-right: 19px;
+    }
+    
+    .tab-detail .nav-tabs {
+        border-bottom: 1px #ebebeb solid;
+    }
+    
+    .glyphicon-ok {
+        color: #679a33;
+    }
+    
+    .nav>li>a {
+        color: #000;
+    }
+</style>
+<div class="tab-detail">
+    <div role="tabpanel">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li id="id_tong_quan" style="margin-left: 0px" role="presentation" class="active">
+                <a href="#home_combo" aria-controls="home" role="tab" data-toggle="tab">TỔNG QUAN</a>
+            </li>
+            <li id="id_rate" role="presentation">
+                <a href="#rate_combo" aria-controls="tab" role="tab" data-toggle="tab">XEM GIÁ COMBO</a>
+            </li>
+            <li id="id_condition" role="presentation">
+                <a href="#info_combo" aria-controls="tab" role="tab" data-toggle="tab">QUY ĐỊNH DỊCH VỤ</a>
+            </li>
+            <li id="id_info_hotel" role="presentation">
+                <a href="#review_combo" aria-controls="tab" role="tab" data-toggle="tab">THÔNG TIN KHÁCH SẠN</a>
+            </li>
+            <li id="id_comment" role="presentation">
+                <a href="#review_combo" aria-controls="tab" role="tab" data-toggle="tab">HỎI ĐÁP</a>
+            </li>
+        </ul>
+        <script>
+            $('#id_tong_quan').click(function() {
+                $("html, body").animate({
+                    scrollTop: 590
+                }, "fast");
+            });
+            $('#id_rate').click(function() {
+                $("html, body").animate({
+                    scrollTop: 781
+                }, "fast");
+            });
+            $('#id_condition').click(function() {
+                $("html, body").animate({
+                    scrollTop: 1400
+                }, "fast");
+            });
+
+            $('#id_info_hotel').click(function() {
+                $("html, body").animate({
+                    scrollTop: 1880
+                }, "fast");
+            });
+            $('#id_comment').click(function() {
+                $("html, body").animate({
+                    scrollTop: 2400
+                }, "fast");
+            });
+        </script>
+    </div>
+</div>

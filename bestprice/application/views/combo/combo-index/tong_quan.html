@@ -1,0 +1,72 @@
+<div style="margin-top :20px">
+    <span style="display: inline;">Khám phá nét hoang sơ đày thơ mộng của hòn Đảo Ngọc Phú Quốc. Đắm mình dưới làn nước xanh trong mátvà thả bộ trên những bãi cát trắng mịn trải dài. Khám phá các trò chơi đầy hứng khởi tại khu vui chơi Vinpearl Land</span>
+    <span class="hide-btn">... </span>
+    <span id='more_info_palce' style="display: none">3 ngày 2 đêm đã bao gồm vé máy bay. Đặc biệt, với combo này bạn sẽ được nghỉ dưỡng tại khách sạn Park 22 Little India 3 sao là khách sạn với lối thiết kế rất riêng mang trong mình nét giao thoa văn hóa đầy tinh tế.</span>    &nbsp;&nbsp;
+    <span>
+        <a id="id_more" class="hide-btn" >Xem thêm&nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+    </span>
+    <span>
+            <a id="id_hide_more" class="hide-btn" style="display: none" >Ẩn xem thêm&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a>
+    </span>
+    <script>
+        $('#id_more').click(function() {
+            $('.hide-btn').hide();
+            $('#more_info_palce').show();
+            $('#id_hide_more').show();
+        });
+        $('#id_hide_more').click(function() {
+            $('.hide-btn').show();
+            $('#more_info_palce').hide();
+            $('#id_hide_more').hide();
+        });
+    </script>
+    <div class="highlights-combo">
+        <div class="title-highlight-combo">
+            <span>Điểm nổi bật<span class="hide-mobile">:</span></span>
+            <span class="arrow-right"></span>
+        </div>
+        <div class="content-highlight-combo">
+            <div>
+                <span class="glyphicon glyphicon-ok "></span>
+                <span>Giờ bay đẹp: đi 9h45, chiều về 13h50</span>
+            </div>
+
+            <div>
+                <span class="glyphicon glyphicon-ok "></span>
+                <span>Tiêu chuẩn khách 4 sao Thái Lan</span>
+            </div>
+
+            <div>
+                <span class="glyphicon glyphicon-ok "></span>
+                <span>Thưởng thức Buffet tại tòa nhà cao nhất </span>
+            </div>
+            <div>
+                <span class="glyphicon glyphicon-ok "></span>
+                <span>Tiêu chuẩn khách sạn 4 sao Thái Lan</span>
+            </div>
+            <div>
+                <span class="glyphicon glyphicon-ok "></span>
+                <span>Thưởng thức Buffet tại tòa nhà cao nhất</span>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .highlights-combo {
+        line-height: 30px;
+        margin-top: 10px;
+        padding-left: 5px;
+    }
+    
+    .highlights-combo .title-highlight-combo {
+        padding-bottom: 0px;
+        margin-left: -5px;
+        position: relative;
+        padding-top: 5px;
+        font-size: 20px;
+    }
+    
+    .content-highlight-combo span {
+        font-size: 14px;
+    }
+</style>
