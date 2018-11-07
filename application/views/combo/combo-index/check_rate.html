@@ -1,0 +1,642 @@
+<style>
+    .check-rate {
+        border: 1px #c3c3c3 solid;
+    }
+    
+    .check-rate .form-check-rate input {
+        line-height: 40px;
+        width: 100%;
+        padding-left: 7px;
+    }
+    
+    .form-check-rate {
+        padding-bottom: 15px;
+    }
+    
+    .form-check-rate .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .form-check-rate .float-input .icon-location-black {
+        position: absolute;
+        top: 18px;
+        right: 10px;
+    }
+    
+    .form-check-rate .icon-ngay-di {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    
+    .form-check-rate .icon-ngay-ve {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    
+    .button-blue {
+        border: 1px #6a87d7 solid;
+        color: #6a87d7;
+        background-color: #fff;
+        border-radius: 1px;
+    }
+    
+    .form-check-rate .col-xs-2,
+    .form-check-rate,
+    .form-check-rate .col-sm-2,
+    .form-check-rate .col-md-2,
+    .form-check-rate .col-lg-2 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .form-check-rate .col-md-3,
+    .form-check-rate .col-lg-3 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .form-check-rate .col-xs-4,
+    .form-check-rate .col-sm-4,
+    .form-check-rate .col-md-4,
+    .form-check-rate .col-lg-4 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .info-rate .col-xs-4,
+    .info-rate .col-sm-4,
+    .info-rate .col-md-4,
+    .info-rate .col-lg-4 {
+        padding-right: 0px;
+    }
+    
+    .float-input {
+        border: solid 1px #ccc;
+        position: relative;
+    }
+    
+    .float-input input {
+        border: none;
+        font-size: 14px;
+        outline: 0;
+        padding: 22px 0px 5px;
+    }
+    
+    .float-input label {
+        position: absolute;
+        transform-origin: top left;
+        transform: translate(0, 12px) scale(1);
+        transition: all .1s ease-in-out;
+        padding-left: 7px;
+    }
+    /** active label */
+    
+    .float-input.active label {
+        transform: translate(0, 5px) scale(1);
+    }
+    
+    .info-rate span {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    
+    .col-left-check-rate-ks-ks-vmb {
+        padding: 15px 0px;
+    }
+    
+    .background-checkc-rate {
+        background-color: #fdf5d1;
+    }
+    
+    .title-rate-combo {
+        font-size: 23px;
+        padding: 10px;
+    }
+    
+    .check-rate .time-left {
+        background-color: #8e8e8e;
+        color: #f9f9f9;
+        float: right;
+        margin-left: 5px;
+        margin-right: 10px;
+        padding: 0px 5px
+    }
+    
+    .check-rate .thoi-han-dat {
+        float: right;
+        margin-top: 1px;
+    }
+    
+    #flight_passenger {
+        width: 97%;
+        height: 46px;
+        padding-left: 5px;
+        margin-left: 5px
+    }
+    
+    .form-check-rate .btn-check-rate {
+        background-color: blue;
+        border: 0px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 45px
+    }
+    
+    .info-rate .row {
+        padding-left: 15px;
+    }
+    
+    .info-rate .title-info-rate-left {
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    
+    .info-rate .content-info-rate-left {
+        line-height: 35px;
+        margin-top: 5px
+    }
+    
+    .info-rate .vertical-line-check-rate-top {
+        border-left: 1px #bfbfbf solid;
+        height: 80px;
+        width: 26%;
+    }
+    
+    .info-rate .vertical-line-check-rate-bottom {
+        border-left: 1px #bfbfbf solid;
+        height: 120px;
+        width: 26%;
+    }
+    
+    .info-rate .horizontal-line-check-rate-left {
+        border-bottom: 1px #bfbfbf solid;
+        height: 0px;
+        width: 43%;
+        position: absolute;
+        top: 21px;
+        left: 0px;
+    }
+    
+    .info-rate .horizontal-line-check-rate-right {
+        border-bottom: 1px #bfbfbf solid;
+        height: 0px;
+        width: 44%;
+        position: absolute;
+        top: 21px;
+        right: 0px;
+    }
+</style>
+<div class="check-rate mobile-combo">
+    <div class="background-checkc-rate">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <div class="title-rate-combo">
+                    <span>Xem giá combo</span>
+                </div>
+            </div>
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 hide-mobile" style="padding-top: 15px">
+                <div class="time-left">
+                    <span class="glyphicon glyphicon-time" style="padding-top:2px"></span>
+                    <span>Còn 26 ngày 12:20:11</span>
+                </div>
+                <span class="thoi-han-dat">*Thời hạn đặt từ: 01/09/2018 đến 31/11/2018</span>
+            </div>
+        </div>
+        <form action="#" class="form-check-rate" method="GET">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-form-rate-left">
+                    <div id="floatContainer1" class="float-input">
+                        <label for="floatField1">Điểm đi:</label>
+                        <input autocomplete="off" style="line-height: 0px" type="text" id="floatField1" data-placeholder="Hà Nội">
+                        <span class="icon icon-location-black"></span>
+                    </div>
+                    <script type="text/javascript">
+                        load_floating_label_input('float-input')
+                    </script>
+                </div>
+                <script src="../../../../assets/datepicker/js/bootstrap-datepicker.js"></script>
+                <script>
+                    $(function() {
+                        'use strict';
+                        var nowTemp = new Date();
+                        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+                        var checkin = $('#timeCheckIn').datepicker({
+                            onRender: function(date) {
+                                return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                            }
+                        }).on('changeDate', function(ev) {
+                            if (ev.date.valueOf() > checkout.date.valueOf()) {
+                                var newDate = new Date(ev.date)
+                                newDate.setDate(newDate.getDate() + 1);
+                                checkout.setValue(newDate);
+                            }
+                            checkin.hide();
+                            $('#timeCheckOut')[0].focus();
+                        }).data('datepicker');
+                        var checkout = $('#timeCheckOut').datepicker({
+                            onRender: function(date) {
+                                return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+                            }
+                        }).on('changeDate', function(ev) {
+                            checkout.hide();
+                        }).data('datepicker');
+                    });
+                </script>
+                <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                    <input autocomplete="off" class="input-ngay-di" name="ngay_di" id='timeCheckIn' type="text" placeholder="Ngày đi" style="position: relative;">
+                    <span class="icon icon-ngay-di icon-calendar"></span>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                    <input autocomplete="off" style="position: relative" class="input-ngay-ve" name="ngay_ve" id="timeCheckOut" type="text" placeholder="Ngày về">
+                    <span class="icon icon-ngay-ve icon-calendar"></span>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-form-rate-right">
+                    <input autocomplete="off" name="hanh_khach" id="flight_passenger" trigger='manual' data-html="true" data-toggle="popover" data-placement='bottom' value="1 người lớn, 1 trẻ em, 1 em bé" />
+                    <div>
+                        <div id="popover_content_flight_passenger" class="hide">
+                            <label for="">Người lớn</label>
+                            <select name="" id="id_adults" class="form-control" required="required">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                            <label for="">Trẻ em</label>
+                            <select name="" id="id_children" class="form-control" required="required">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                            <label for="">Em bé</label>
+                            <select name="" id="id_infants" class="form-control" required="required">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                            <button id="id_btn_close" type="button" class="btn btn-default">Đóng</button>
+                        </div>
+                    </div>
+                    <script>
+                        var flight_passenger = ['1', '1', '1'];
+
+                        function load_flight_pasenger() {
+                            var a = ['', '', ''];
+                            a[0] = flight_passenger[0] + ' nguời lớn';
+                            a[1] = flight_passenger[1] + ' trẻ em';
+                            a[2] = flight_passenger[2] + ' em bé';
+
+                            $('#flight_passenger').val(a);
+                        }
+
+                        $(document).on("change", "#id_adults", function() {
+                            var a = $('#id_adults option:selected').text();
+                            flight_passenger[0] = a;
+                            load_flight_pasenger();
+                        });
+                        $(document).on("change", "#id_children", function() {
+                            var a = $('#id_children option:selected').text();
+                            flight_passenger[1] = a;
+                            load_flight_pasenger();
+                        });
+                        $(document).on("change", "#id_infants", function() {
+                            var a = $('#id_infants option:selected').text();
+                            flight_passenger[2] = a;
+                            load_flight_pasenger();
+                        });
+
+
+                        $(document).on("click", "#id_btn_close", function() {
+                            $('[data-toggle="popover"]').popover('hide');
+                        });
+                        $(document).ready(function() {
+                            $('[data-toggle="popover"]').popover({});
+                        });
+
+
+                        $("[data-toggle=popover]").popover({
+                            html: true,
+                            content: function() {
+                                var id = $(this).attr('id')
+                                return $('#popover_content_flight_passenger').html();
+                            }
+                        });
+                        $("[data-toggle=popover]").on('inserted.bs.popover', function() {
+                            $('#id_adults').val(flight_passenger[0]);
+                            $('#id_children').val(flight_passenger[1]);
+                            $('#id_infants').val(flight_passenger[2]);
+
+                        })
+                    </script>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                    <input class="btn-check-rate" type="submit" value="Xem giá" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="info-rate">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 ">
+                <!-------------Col-check-rate-dynamic left------------>
+                <div class="col-left-check-rate-dynamic">
+                    <div class="title-info-rate-left">
+                        <b>Khách sạn Vinpearl resort 4 sao:</b>
+                    </div>
+                    <div class="content-info-rate-left">
+                        <span class="icon-noi-dia icon-clock-combo"></span>
+                        <span>2 đêm tại khách sạn tiêu chuẩn 4 sao</span>
+                        <br/>
+                        <span class="icon-noi-dia icon-bed-combo"></span>
+                        <span>Hạng phòng Superior Double</span>
+                        <br/>
+                        <span class="icon-noi-dia icon-food-combo"></span>
+                        <span>Các bữa ăn trong chương trình</span>
+                        <br/>
+                        <span class="icon-noi-dia icon-car-combo"></span>
+                        <span>Xe đón tiễn sân bay - khách sạn</span>
+                        <br/>
+                        <a href="javascript: void(0)" data-trigger="focus" style="color: #6a87d7;" data-toggle="popover" datta-trigger='focus'><span  class="glyphicon glyphicon-info-sign"></span> &nbsp; Xem chi tiết phòng</a>
+                        <script>
+                            $("[data-toggle=popover]").popover({
+                                html: true,
+                                content: function() {
+                                    var id = $(this).attr('id')
+                                    return $('#popover_detail_room').html();
+                                }
+                            });
+                            $('.popover-dismiss').popover({
+                                trigger: 'focus'
+                            })
+                        </script>
+
+                        <div id="popover_detail_room" class="hide">
+                            aaaaaaaaaaa
+                        </div>
+                        <br/>
+                        <button class="button-blue" data-toggle="modal" data-target='#id_modal_change_room' style="line-height: 25px">Thay đổi hạng phòng</button>
+                        <br/>
+                        <div class="modal fade" id="id_modal_change_room">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------End Dynami----------------------->
+                <!--Combo KS + KS + VMB --->
+                <div class="col-left-check-rate-ks-ks-vmb">
+                    <div style="margin-bottom: 15px;">
+                        <b style="font-size: 18px">
+                        Thông tin khách sạn:
+                        </b>
+                    </div>
+                    <div style="line-height: 24px">
+                        <div>
+                            <span class="glyphicon glyphicon-ok"></span> <span>01 đêm tại vinpearl Đà Nẵng Resort</span>
+                            <span style="float: left;padding-left: 20px">(hạng phòng)</span>
+                            <div style="float: left;" id='show_img_room_in_check_rate_ks_ks_vmb_1'>
+                                <div data-responsive="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 375, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 480, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg"
+                                    data-src="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg" data-sub-html="">
+                                    <a href="#" style="font-size: 14px;">
+                                            Xem ảnh phòng
+                                            <img class="img-responsive hide" src="../../../../assets/lightGallery-master/img/img-combo/hotel.png">
+                                        </a>
+                                </div>
+                                <div class="hide" data-responsive="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 375, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 480, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg"
+                                    data-src="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg" data-sub-html="">
+                                    <a href="#">
+                                        <img class="img-responsive" src="../../../../assets/lightGallery-master/img/img-combo/hotel.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div style="margin-top: 15px">
+                            <span class="glyphicon glyphicon-ok"></span> <span>02 đêm tại vinpearl Đà Nẵng Resort</span>
+                            <span style="float: left;padding-left: 20px">(hạng phòng)</span>
+                            <div style="float: left;" id='show_img_room_in_check_rate_ks_ks_vmb_2'>
+                                <div data-responsive="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 375, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 480, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg"
+                                    data-src="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg" data-sub-html="">
+                                    <a href="#" style="font-size: 14px;">
+                                                Xem ảnh phòng
+                                                <img class="img-responsive hide" src="../../../../assets/lightGallery-master/img/img-combo/hotel.png">
+                                            </a>
+                                </div>
+                                <div class="hide" data-responsive="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 375, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 480, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg"
+                                    data-src="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg" data-sub-html="">
+                                    <a href="#">
+                                        <img class="img-responsive" src="../../../../assets/lightGallery-master/img/img-combo/hotel.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button-blue" data-toggle="modal" data-target='#id_modal_change_combo-ks-ks-vmb' style=" line-height: 30px;margin-top: 20px;font-size: 14px;padding: 0px 15px">Thay đổi gói combo</button>
+                    <br/>
+                    <div class="modal fade" id="id_modal_change_combo-ks-ks-vmb">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $('document').ready(function() {
+                        $('#show_img_room_in_check_rate_ks_ks_vmb_1').lightGallery();
+                        $('#show_img_room_in_check_rate_ks_ks_vmb_2').lightGallery();
+                    });
+                </script>
+                <!--End --->
+                <!-------------Combo KS + KS-------------->
+                <div class="col-check-rate-ks-ks-left">
+                    <div style="margin-top: 20px">
+                        <b style="font-size: 18px;">Chi tiết combo</b>
+                    </div>
+                    <div style="margin-top: 15px">
+                        <span style="float: left;" class="glyphicon glyphicon-ok"></span> <span style="float: left;">02 đêm tại vinpearl Đà Nẵng Resort</span>
+                        <span style="float: left;padding-left: 20px">(hạng phòng)</span>
+                        <div style="float: left;" id='show_img_room_in_check_rate_ks_ks_1'>
+                            <div data-responsive="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 375, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 480, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg"
+                                data-src="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg" data-sub-html="">
+                                <a href="#" style="font-size: 14px;">
+                                                            Xem ảnh phòng
+                                                            <img class="img-responsive hide" src="../../../../assets/lightGallery-master/img/img-combo/hotel.png">
+                                                        </a>
+                            </div>
+                            <div class="hide" data-responsive="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 375, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 480, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg"
+                                data-src="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg" data-sub-html="">
+                                <a href="#">
+                                    <img class="img-responsive" src="../../../../assets/lightGallery-master/img/img-combo/hotel.png">
+                                </a>
+                            </div>
+                        </div>
+                        <script>
+                            $('document').ready(function() {
+                                $('#show_img_room_in_check_rate_ks_ks_1').lightGallery();
+                            });
+                        </script>
+                    </div>
+                </div>
+                <!------------------END-------------------->
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+                <div class="icon-plush-mobile" style="text-align: center;margin-top: 25px;margin-bottom: 25px;position: relative;">
+                    <div class="hide-on-pc horizontal-line-check-rate-left"></div>
+                    <div class="hide-mobile vertical-line-check-rate-top"></div>
+                    <span style="margin-left: -35px;" class="icon-noi-dia  icon-plus-white-combo"></span>
+                    <div class="hide-mobile vertical-line-check-rate-bottom"></div>
+                    <div class="hide-on-pc horizontal-line-check-rate-right"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-right-check-rate-dynamic">
+                <!---------------------Col check-rate VMB Right---------------------->
+                <div class="col-check-rate-vmb">
+                    <div class="title-vmb" style="margin-top: 15px">
+                        <b style="font-size: 18px">Vé máy bay khứ hồi:</b>
+                    </div>
+                    <div style="margin-top: 10px; line-height: 23px">
+                        <div>
+                            <span>Chiều đi:  <span class="icon-noi-dia  icon-vietjetair"></span> Hà Nội - Hồ Chí Minh</span>
+                            <br/>
+                            <span>Ngày đi: 31/07/2018</span>
+                            <br/>
+                            <span>11:45 &nbsp; <span class="glyphicon glyphicon-arrow-right"></span>&nbsp;13:35</span>&nbsp;&nbsp;&nbsp;<button data-toggle="modal" data-target="#id_change_ticket_come" class="button-blue">Thay đổi</button>
+                            <div class="modal fade" id="id_change_ticket_come">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span style="color: #696969">- - - - - - - - - - - - - - - - - - - - - - - - - - -</span>
+                        <br/>
+                        <div>
+                            <span>Chiều đi:  <span class="icon-noi-dia icon-jetstar"></span> Hà Nội - Hồ Chí Minh</span>
+                            <br/>
+                            <span>Ngày đi: 31/07/2018</span>
+                            <br/>
+                            <span>11:45 &nbsp; <span class="glyphicon glyphicon-arrow-right"></span>&nbsp;13:35</span>&nbsp;&nbsp;&nbsp;<button data-toggle="modal" data-target="#id_change_ticket_back" class="button-blue">Thay đổi</button>
+                            <div class="modal fade" id="id_change_ticket_back">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-----------------END Col check rate VMB-------------------->
+                <!-----------------Col check rate KS------------------------------>
+                <div class="col-check-rate-ks-ks-right">
+                    <div style="margin-top: 55px">
+                        <div>
+                            <span style="float: left;" class="glyphicon glyphicon-ok"></span>
+                            <span style="float: left;">02 đêm tại vinpearl Đà Nẵng Resort</span>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <span style="float: left;padding-left: 20px">(hạng phòng)</span>
+                        <div style="float: left;" id='show_img_room_in_check_rate_ks_ks_2'>
+                            <div data-responsive="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 375, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 480, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg"
+                                data-src="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg" data-sub-html="">
+                                <a href="#" style="font-size: 14px;">
+                                                    Xem ảnh phòng
+                                                    <img class="img-responsive hide" src="../../../../assets/lightGallery-master/img/img-combo/hotel.png">
+                                                </a>
+                            </div>
+                            <div class="hide" data-responsive="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 375, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg 480, ../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg"
+                                data-src="../../../../assets/lightGallery-master/img/img-combo/free-easy-tour-dao-ngoc-nong-nan-voi-vinpearl-phu-quoc-resort-novotel-phu-quoc-resort-5789c0b392a30.jpg" data-sub-html="">
+                                <a href="#">
+                                    <img class="img-responsive" src="../../../../assets/lightGallery-master/img/img-combo/hotel.png">
+                                </a>
+                            </div>
+                        </div>
+                        <script>
+                            $('document').ready(function() {
+                                $('#show_img_room_in_check_rate_ks_ks_2').lightGallery();
+                            });
+                        </script>
+                    </div>
+                </div>
+                <!-----------------END Col check rate KS----------------------------------------->
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #e7e7e7;margin-top: 0px">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-left: 15px">
+
+                <h4 style="margin-top: 15px">Chi tiết tổng giá</h4>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #e7e7e7; padding: 30px;padding-bottom: 15px;padding-top: 5px">
+        <div class="row" style=" background-color: #fff">
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <div class="gach-ngang-chi-tiet-gia" style="padding-top: 20px;padding-bottom: 10px">
+                    <span style="line-height: 24px">2 ngày 1 đêm khách sạn + vé máy bay khứ hồi 1 người lớn</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 " style=" background-color: #fff ">
+                <div class="price-combo-mobile" style="margin-bottom: 15px;margin-top: 20px;text-align: right;">
+                    <b>Tổng tiền:</b> <span style="text-decoration: line-through;font-size: 16px ">5.999.000đ</span>/người
+                    <br/>
+                    <span class="price-margin-right" style="color: #ba0100;font-size: 23px ">5.599.000đ</span>/người
+                    <br/> Tiết kiệm được: <span style="color: #f67521;font-size: 16px ">300.000đ</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="background-color: #fff ">
+                <button class="btn-order-combo-mobile" style="width: 100%;line-height: 50px; font-size: 20px; background-color: #f67521;border: 0px; color: #fff; margin-top: 30px ">
+                        Đặt ngay<span class="icon icon-arrow-circle-white-right"></span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
