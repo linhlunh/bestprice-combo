@@ -132,11 +132,13 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 9.5px -0px 9.5px 8px;
+        border-width: 16.5px 0px 16.5px 14px;
         border-color: transparent transparent transparent #fffec8;
         position: absolute;
-        top: -0.5px;
-        right: -10px;
+        top: 0px;
+        right: 3px;
+        padding: 0px 0px
+        }
     }
 </style>
 
