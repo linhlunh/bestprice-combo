@@ -1,0 +1,934 @@
+/*-------------------------------Index Combo-----------------------------------*/
+
+.background-container-detail .icon-location-black {
+    background-position: -19px -881px;
+    width: 16px;
+    height: 19px;
+    margin-top: -5px;
+}
+
+.icon {
+    background-image: url('../../../../assets/img/icon/sprite@2x.101020181806.png');
+}
+
+.header-content {
+    font-size: 24px;
+    line-height: 44px;
+    margin-left: 15px;
+}
+
+.mybtn-more {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #179dfc;
+    background-color: #fff;
+    line-height: 31px;
+    border: 1px #dcdcdc solid;
+    border-radius: 2px
+}
+
+.myboder-content-combo {
+    border: 1px #dcdcdc solid;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.col-left-check-rate-ks-ks-vmb,
+.col-check-rate-ks-ks-left,
+.col-check-rate-ks-ks-right {
+    display: none;
+}
+
+.btn-order-combo-mobile {
+    padding: 0 20px 0 20px;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: #f67521;
+    border: 0px;
+    color: #fff;
+    margin-top: 30px
+}
+
+@media only screen and (max-width: 768px) {
+    .hide-mobile,
+    .img-slide .img-right,
+    .title-header-combo,
+    .price-combo-bottom,
+    .file-support,
+    .file-tab-combo-pc {
+        display: none;
+    }
+    .file-tab-combo-mobile {
+        display: block;
+    }
+    .file-similar {
+        margin-top: 0px !important;
+    }
+    .img-slide .img-center {
+        width: 100%;
+        height: 100%;
+    }
+    .img-slide .img-bottom {
+        width: 25% !important;
+        height: 25% !important;
+        float: left;
+    }
+    .img-bottom.img-bottom-4 {
+        display: block !important;
+    }
+    .box-img {
+        margin-left: -15px;
+        margin-right: -15px
+    }
+    .border-hightlight {
+        border: 0px #6f6f6f solid !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        background-color: #f2f2f2 !important;
+    }
+    .border-hightlight .header-about-combo {
+        background-color: #fff;
+        padding: 15px 10px 0px 10px;
+    }
+    .title-header-combo-mobile h3 {
+        margin-bottom: 0px;
+    }
+    .price-box-bottom-mobile {
+        background-color: #f2f2f2;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: -10px;
+        padding-top: 20px;
+    }
+    .price-combo-bottom-mobile {
+        padding-bottom: 10px;
+    }
+    .background-container-detail {
+        padding-bottom: 5px;
+    }
+    #flight_passenger {
+        margin: 10px 10px 15px 0px !important;
+        width: 100% !important;
+    }
+    .btn-check-rate {
+        margin-bottom: 15px;
+    }
+    .icon-plush-mobile {
+        margin: 15px 15px 15px 0px !important;
+    }
+    .check-rate.mobile-combo {
+        border: 1px #e97100 solid;
+    }
+    .check-rate .title-rate-combo {
+        color: #f8762a;
+    }
+    .price-combo-mobile {
+        margin-top: 10px !important;
+        text-align: center;
+    }
+    .price-combo-mobile .price-margin-right {
+        margin-left: 40px;
+    }
+    .btn-order-combo-mobile {
+        margin: 0px 10px 15px 0px !important;
+    }
+    .btn-order-bottom {
+        padding-top: 15px !important;
+        padding-bottom: 5px !important;
+    }
+    .title-highlight-combo {
+        width: 126px;
+        color: #fff;
+        background-color: #6e9c53;
+        margin-top: -1px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    .highlights-combo {
+        border: 1px #6e9c51 solid;
+        padding-bottom: 10px;
+        line-height: 30px !important;
+    }
+    .content-highlight-combo {
+        margin-left: 5px;
+    }
+    .highlights-combo .arrow-right {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 18px 1px 18px 14px;
+        border-color: transparent transparent transparent #6e9c53;
+        position: absolute;
+        top: 0;
+        right: -15px;
+    }
+    .gach-ngang-chi-tiet-gia {
+        border-bottom: 1px #e9e9e9 solid;
+    }
+    .popover {
+        max-width: 50% !important;
+        min-width: 0px !important;
+        width: 50%;
+    }
+    .input-ngay-di,
+    .input-ngay-ve {
+        margin-top: 10px;
+    }
+    .icon-ngay-di,
+    .icon-ngay-ve {
+        top: 23px !important;
+    }
+    .info-rate .title-vmb {
+        padding-top: 0px !important;
+        margin-top: -5px
+    }
+    .btn-more-info-hotel {
+        padding-top: 10px !important;
+    }
+    .similar-combo h3 {
+        font-size: 21px;
+    }
+    .btn-more-condition {
+        padding-top: 15px !important;
+    }
+    .uu-dai {
+        margin-bottom: 10px !important;
+        margin-top: 15px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hide-on-pc,
+    .title-header-combo-mobile,
+    .file-tab-combo-mobile {
+        display: none;
+    }
+    .price-combo-bottom-mobile {
+        display: none;
+    }
+    .img-slide .img-center {
+        width: 66.6666666666%;
+        height: 66.6666666666%;
+    }
+    .background-container-detail {
+        padding-bottom: 20px;
+    }
+    .overide-combo.container {
+        width: 1181px;
+        padding-left: 1px;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .col-lg-8.col-left {
+        width: 70.7%;
+    }
+    .col-lg-4.col-right {
+        width: 29.3%;
+    }
+    .col-md-3.col-form-rate-left {
+        width: 22%;
+    }
+    .col-md-3.col-form-rate-right {
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .col-lg-8.col-left {
+        width: 70.7%;
+    }
+    .col-lg-4.col-right {
+        width: 29.3%;
+    }
+    .col-lg-3.col-form-rate-left {
+        width: 22%;
+    }
+    .col-lg-3.col-form-rate-right {
+        width: 28%;
+    }
+}
+
+.modal {
+    z-index: 99999 !important;
+}
+
+.affix {
+    top: 0;
+    z-index: 99 !important;
+    background-color: #fff;
+    width: 100%;
+}
+
+
+/*------------------------------End index Combo--------------------------*/
+
+
+/*------------------------------Header-detail----------------------------*/
+
+.background-container-detail .icon-location-black {
+    background-position: -19px -881px;
+    width: 16px;
+    height: 19px;
+    margin-top: -5px;
+}
+
+.background-container-detail .icon-clock {
+    background-position: -80px -884px;
+    width: 16px;
+    height: 16px;
+    margin-top: -3px;
+}
+
+.background-container-detail .icon-calendar {
+    background-position: -96px -886px;
+    width: 16px;
+    height: 14px;
+    margin-top: -3px;
+}
+
+.background-container-detail {
+    background-color: #f1f1f1;
+}
+
+.background-container-detail img {
+    width: 100%;
+}
+
+.icon {
+    background-image: url('../../../../assets/img/icon/sprite@2x.101020181806.png');
+}
+
+.about-combo {
+    line-height: 22px !important;
+}
+
+.about-combo span {
+    padding: 7px 0px;
+    padding-left: 3px;
+    font-size: 14px;
+}
+
+.about-combo .glyphicon-ok {
+    color: #693;
+}
+
+.price-combo {
+    position: relative;
+}
+
+.price-combo .price-combo-bottom {
+    position: absolute;
+    right: 0px;
+    bottom: -70px
+}
+
+.background-container-detail {
+    line-height: 24px;
+}
+
+.header-about-combo span {
+    font-size: 14px;
+}
+
+.header-about-combo {
+    position: relative;
+}
+
+.border-hightlight .header-info-combo {
+    line-height: 28px;
+    border-bottom: 1px #f1f1f1 solid;
+    padding-bottom: 22px;
+    margin-bottom: 21px;
+}
+
+.border-hightlight .icon-camket {
+    float: right;
+    width: 30%;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+}
+
+.about-combo b {
+    font-size: 15px;
+    padding-left: -5px;
+}
+
+.uu-dai {
+    background-color: #fffec8;
+    color: #f57828;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 0px 5px 5px;
+    width: 95%;
+}
+
+.uu-dai span {
+    font-size: 13px;
+}
+
+.price-box-bottom-mobile .btn-dat-ngay {
+    padding: 11px 0px;
+    width: 100%;
+    font-size: 22px;
+    color: #fff;
+    background-color: #f67521;
+    border: 0px;
+}
+
+.price-box-bottom-mobile .tiet-kiem {
+    margin: 10px 0px 9px 0px;
+    text-align: center;
+}
+
+.border-hightlight {
+    border: 2px #6f6f6f solid;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: #fff;
+}
+
+.price-combo-bottom-mobile {
+    text-align: center;
+}
+
+.background-container-detail .col-md-8,
+.background-container-detail .col-lg-8 {
+    padding-right: 11px;
+}
+
+.arrow-right.arrow-uu-dai {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16.5px 0px 16.5px 14px;
+    border-color: transparent transparent transparent #fffec8;
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    padding: 0px 0px
+}
+
+
+/*-----------------------------End Header-detail-------------------------*/
+
+
+/*-----------------------------Tab middle-------------------------------*/
+
+.tab-detail .nav-tabs li.active a:focus,
+.tab-detail .nav-tabs li.active a:hover,
+.tab-detail .nav-tabs li.active a {
+    color: #f67521;
+    border: 0px;
+    border-bottom: 3px #f67521 solid;
+}
+
+.tab-detail .nav-tabs li a:hover {
+    color: #f67521;
+    background-color: #fff;
+    border: 0px;
+    border-bottom: 3px #f67521 solid;
+}
+
+.tab-detail .nav-tabs li {
+    margin-left: 40px;
+}
+
+.tab-detail .nav>li>a {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 15px;
+    font-size: 14px;
+    margin-right: 19px;
+}
+
+.tab-detail .nav-tabs {
+    border-bottom: 1px #ebebeb solid;
+}
+
+.glyphicon-ok {
+    color: #679a33;
+}
+
+.nav>li>a {
+    color: #000;
+}
+
+
+/*----------------------------End tab middle-------------------------------*/
+
+
+/*--------------------------Tong quan---------------------------------*/
+
+.highlights-combo {
+    line-height: 30px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.highlights-combo .title-highlight-combo {
+    padding-bottom: 0px;
+    margin-left: -5px;
+    position: relative;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.content-highlight-combo span {
+    font-size: 14px;
+}
+
+
+/*-----------------------End Tong quan-------------------------------*/
+
+
+/*------------------------------Check rate------------------------------*/
+
+.check-rate {
+    border: 1px #c3c3c3 solid;
+}
+
+.check-rate .form-check-rate input {
+    line-height: 40px;
+    width: 100%;
+    padding-left: 7px;
+}
+
+.form-check-rate {
+    padding-bottom: 15px;
+}
+
+.form-check-rate .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.form-check-rate .float-input .icon-location-black {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+
+.form-check-rate .icon-ngay-di {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.form-check-rate .icon-ngay-ve {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.button-blue {
+    border: 1px #6a87d7 solid;
+    color: #6a87d7;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.form-check-rate .col-xs-2,
+.form-check-rate,
+.form-check-rate .col-sm-2,
+.form-check-rate .col-md-2,
+.form-check-rate .col-lg-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.form-check-rate .col-md-3,
+.form-check-rate .col-lg-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.form-check-rate .col-xs-4,
+.form-check-rate .col-sm-4,
+.form-check-rate .col-md-4,
+.form-check-rate .col-lg-4 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.info-rate .col-xs-4,
+.info-rate .col-sm-4,
+.info-rate .col-md-4,
+.info-rate .col-lg-4 {
+    padding-right: 0px;
+}
+
+.float-input {
+    border: solid 1px #ccc;
+    position: relative;
+}
+
+.float-input input {
+    border: none;
+    font-size: 14px;
+    outline: 0;
+    padding: 22px 0px 5px;
+}
+
+.float-input label {
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(0, 12px) scale(1);
+    transition: all .1s ease-in-out;
+    padding-left: 7px;
+}
+
+
+/** active label */
+
+.float-input.active label {
+    transform: translate(0, 5px) scale(1);
+}
+
+.info-rate span {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.col-left-check-rate-ks-ks-vmb {
+    padding: 15px 0px;
+}
+
+.background-checkc-rate {
+    background-color: #fdf5d1;
+}
+
+.title-rate-combo {
+    font-size: 23px;
+    padding: 10px;
+}
+
+.check-rate .time-left {
+    background-color: #8e8e8e;
+    color: #f9f9f9;
+    float: right;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 0px 5px
+}
+
+.check-rate .thoi-han-dat {
+    float: right;
+    margin-top: 1px;
+}
+
+#flight_passenger {
+    width: 97%;
+    height: 46px;
+    padding-left: 5px;
+    margin-left: 5px
+}
+
+.form-check-rate .btn-check-rate {
+    background-color: blue;
+    border: 0px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 45px
+}
+
+.info-rate .row {
+    padding-left: 15px;
+}
+
+.info-rate .title-info-rate-left {
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.info-rate .content-info-rate-left {
+    line-height: 35px;
+    margin-top: 5px
+}
+
+.info-rate .vertical-line-check-rate-top {
+    border-left: 1px #bfbfbf solid;
+    height: 80px;
+    width: 26%;
+}
+
+.info-rate .vertical-line-check-rate-bottom {
+    border-left: 1px #bfbfbf solid;
+    height: 120px;
+    width: 26%;
+}
+
+.info-rate .horizontal-line-check-rate-left {
+    border-bottom: 1px #bfbfbf solid;
+    height: 0px;
+    width: 43%;
+    position: absolute;
+    top: 21px;
+    left: 0px;
+}
+
+.info-rate .horizontal-line-check-rate-right {
+    border-bottom: 1px #bfbfbf solid;
+    height: 0px;
+    width: 44%;
+    position: absolute;
+    top: 21px;
+    right: 0px;
+}
+
+
+/*-----------------------------End check rate-----------------------*/
+
+
+/*-----------------------------Condition---------------------------*/
+
+.background-container-detail .icon-location-black {
+    background-position: -19px -881px;
+    width: 16px;
+    height: 19px;
+    margin-top: -5px;
+}
+
+.icon {
+    background-image: url('../../../../assets/img/icon/sprite@2x.101020181806.png');
+}
+
+.condition-hotel {
+    margin-top: 15px;
+}
+
+.content-condition {
+    line-height: 24px;
+}
+
+.content-condition .btn-more-condition {
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: -48px;
+}
+
+
+/*-----------------------------End Condition-----------------------*/
+
+
+/*------------------------------Info hotel dynamic ks-ks---------------------------*/
+
+.background-container-detail .icon-location-black {
+    background-position: -19px -881px;
+    width: 16px;
+    height: 19px;
+    margin-top: -5px;
+}
+
+.icon {
+    background-image: url('../../../../assets/img/icon/sprite@2x.101020181806.png');
+}
+
+.info-combo .container-info {
+    padding-bottom: 25px;
+}
+
+.detail-hotel span {
+    line-height: 22px;
+}
+
+.detail-hotel {
+    border-bottom: 1px #dcdcdc dashed;
+    padding: 18px 0px 20px 15px;
+}
+
+.detail-hotel .title-detail-hotel {
+    font-size: 20px;
+    color: #3285d5;
+    margin-bottom: 0px;
+}
+
+.convenient .row {
+    line-height: 35px;
+    padding-left: 20px;
+}
+
+.btn-more-info-hotel {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: -42px;
+}
+
+
+/*------------------------------End Info hotel dynamic ks-ks-----------------------*/
+
+
+/*-----------------------------Comment Facebook------------------------------------*/
+
+.background-container-detail .icon-location-black {
+    background-position: -19px -881px;
+    width: 16px;
+    height: 19px;
+    margin-top: -5px;
+}
+
+.icon {
+    background-image: url('../../../../assets/img/icon/sprite@2x.101020181806.png');
+}
+
+.review-combo .progress {
+    height: 10px;
+}
+
+.review-combo .point-review {
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: #337ab7;
+    border-radius: 3px;
+}
+
+.review-combo ._5o4h ._1gl3 {
+    background-color: #fff;
+    color: #000;
+}
+
+.review-combo .myboder-content-combo {
+    margin: 0px;
+    padding-top: 25px;
+}
+
+
+/*--------------------------------End Comment Facebook------------------------------*/
+
+
+/*--------------------------------Similar-------------------------------------*/
+
+.background-container-detail .icon-location-black {
+    background-position: -19px -881px;
+    width: 16px;
+    height: 19px;
+    margin-top: -5px;
+}
+
+.icon {
+    background-image: url('../../../../assets/img/icon/sprite@2x.101020181806.png');
+}
+
+.similar-combo {
+    background-color: #f1f1f1;
+}
+
+.col-xs-5.remove-padding-similar,
+.col-sm-5.remove-padding-similar,
+.col-md-5.remove-padding-similar,
+.col-lg-5.remove-padding-similar {
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+}
+
+.col-xs-4.remove-padding-similar,
+.col-sm-4.remove-padding-similar,
+.col-md-4.remove-padding-similar,
+.col-lg-4.remove-padding-similar {
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+}
+
+.similar-combo img {
+    width: 100px;
+    height: 100px;
+}
+
+.similar-combo .content-similar {
+    background-color: #fff;
+    margin: 10px;
+    position: relative;
+    min-height: 120px;
+}
+
+.content-similar .opacity-bottom {
+    position: absolute;
+    z-index: 2;
+    background-color: #000;
+    opacity: 0.5;
+    bottom: 0px;
+    left: 0px;
+    width: 100px;
+    height: 20%;
+    text-align: center;
+}
+
+.opacity-bottom .icon-left {
+    z-index: 3;
+    position: absolute;
+    bottom: -5px;
+    left: 18px;
+}
+
+.opacity-bottom .icon-middle {
+    z-index: 3;
+    color: #feb30a;
+    font-size: 22px;
+    position: absolute;
+    bottom: -5px;
+    left: 42px;
+}
+
+.opacity-bottom .icon-right {
+    z-index: 3;
+    position: absolute;
+    bottom: -5px;
+    left: 56px;
+}
+
+.content-similar .title {
+    padding: 5px 0px 0px 120px;
+}
+
+.title .title-top {
+    color: #333;
+    font-size: 14px;
+}
+
+.title .title-bottom {
+    margin-top: 25px;
+    margin-right: 10px;
+    float: right;
+}
+
+
+/*--------------------------------End Similar--------------------------------*/
+
+
+/*-------------------------------Suppot------------------------------------*/
+
+.background-container-detail .icon-location-black {
+    background-position: -19px -881px;
+    width: 16px;
+    height: 19px;
+    margin-top: -5px;
+}
+
+.icon {
+    background-image: url('../../../../assets/img/icon/sprite@2x.101020181806.png');
+}
+
+.support-combo .btn-gui-yeu-cau {
+    font-size: 20px;
+    width: 200px;
+    padding-left: 10px;
+    color: #fff;
+    background-color: #4CAF50;
+    line-height: 40px;
+    border: 1px #fff solid;
+    border-radius: 2px;
+}
+
+.support-combo .info-support {
+    background-color: #4CAF50;
+}
+
+
+/*-----------------------------End Support---------------------------------*/

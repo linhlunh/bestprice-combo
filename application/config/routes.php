@@ -56,3 +56,4 @@ $route['home'] = 'home_controller/load_view_home';
 $route['combo-Dynamic-ks-vmb'] = 'combo_controller/load_view_combo_KS_VMB';
 $route['combo-ks-ks-vmb'] = 'combo_controller/load_view_combo_KS_KS_VMB';
 $route['combo-ks-ks'] = 'combo_controller/load_view_combo_KS_KS';
+$route['loadimg'] = 'combo_controller/LoadListImg';
