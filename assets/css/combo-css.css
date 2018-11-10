@@ -1,3 +1,16 @@
+.icon-youtube {
+    background-image: url("../../assets/img/icon/kisspng-youtube-computer-icons-logo-clip-art-classic-youtube-icon-5ab1bdde227952.3405347515215979181412.jpg");
+    background-size: 65px 65px;
+    background-repeat: no-repeat !important;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -7px -14.7px;
+    width: 51px;
+    height: 36px;
+    border-radius: 10px;
+}
+
+
 /*-------------------------------Index Combo-----------------------------------*/
 
 .background-container-detail .icon-location-black {
